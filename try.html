@@ -30,7 +30,7 @@
         </style>
         </head>
         <body>
-        <form name="f1"method="get"action="http://localhost:8869/"onsubmit="validate()">
+        <form name="f1"method="get"action="http://localhost:8860"onsubmit="validate()">
         <div class="div1">
         <fieldset>
         <legend><b>PARTICIPANT DETAILS</b></legend>
@@ -39,11 +39,11 @@
         CAMP NO:
         <input type="text" id="cmp"value="23CMP600" disabled><br><br>
         <label for="fname">First name:</label>
-        <input type="text" id="fname" placeholder="Enter first name"name="fname"pattern=[a-zA-Z]{3,} AUTOFOCUS ><br><br>
+        <input type="text" id="fname" name="fname"placeholder="Enter first name"name="fname"pattern=[a-zA-Z]{3,} AUTOFOCUS ><br><br>
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" placeholder="Enter last name"name="lname"pattern=[a-zA-Z]{2} AUTOFOCUS ><br><br>
+        <input type="text" id="lname" name="lname"placeholder="Enter last name"name="lname"pattern=[a-zA-Z]{2,} AUTOFOCUS ><br><br>
         <label for="pass">Password:</label>
-        <input type="password" id="pass" placeholder="Enter password"name="lname" AUTOFOCUS ><br><br>
+        <input type="password" id="pass" placeholder="Enter password"name="pass" AUTOFOCUS ><br><br>
         <label for="birthday">Birthday:</label>
         <input type="date" id="birthday"name="bd"><br><br>
         <label for="gender">Gender:</label>
@@ -67,7 +67,7 @@
         <input type="text" id="email" placeholder="Enter email id"name="email"><br><br>
         <label for="phone number">Phone number:</label>
         <input type="text"value="+91"size="1"disabled>
-        <input type="tel" placeholder="123-456-7890" name="pn"><br><br>
+        <input type="tel" placeholder="123-456-7890" name="pn" id="pn"><br><br>
         <label for="address">Address :</label><br>
         &emsp;&emsp;&emsp;&emsp;<textarea name="message" rows="3" cols="20" placeholder="Enter your address"></textarea><br><br>
         <label for="pin">Pin Code :</label>
